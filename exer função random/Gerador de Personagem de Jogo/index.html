@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let classes = ["Guerreiro", "Mago", "Arqueiro"];
+let armas = ["Espada", "Cajado", "Arco"];
+let poderes = ["Invisibilidade", "Fogo", "Gelo"];
+
+// Função para sortear item
+function sortearItem(lista) {
+    let indice = Math.floor(Math.random() * lista.length);
+    return lista[indice];
+}
+
+// Sorteio do combo
+let classe = sortearItem(classes);
+let arma = sortearItem(armas);
+let poder = sortearItem(poderes);
+
+
+// Exibir resultado
+console.log("Seu personagem é um " + classe + " com " + arma + "que possui um poder de " + poder);
+
+</script>
+</body>
+</html>
